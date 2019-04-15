@@ -1,0 +1,95 @@
+.blue-css-square { height:20px; width:20px; background-color:#6dcff6;margin-top:4px; }
+.green-css-square { height:20px; width:20px; background-color:#b0d4be;margin-top:4px; }
+.orange-css-square { height:20px; width:20px; background-color:#f3b758;margin-top:4px; }
+.gold-css-square { height:20px; width:20px; background-color:#bfb182;margin-top:4px; }
+.sleek-css-square { height:20px; width:20px; background-color:#a5a787;margin-top:4px; }
+.seagul-css-square { height:20px; width:20px; background-color:#65C6BB;margin-top:4px; }
+.pink-css-square { height:20px; width:20px; background-color:#ffb6b6;margin-top:4px; }
+.yellow-css-square { height:20px; width:20px; background-color:#fae596;margin-top:4px; }
+
+#switcher-body .container {
+	background:#fff;
+	margin:50px auto;
+	border:1px solid #dedede;
+	padding:40px;
+}
+.demo_changer{ 
+    z-index: 1000; 
+    position: fixed;
+    left: -113px;
+    top: 210px; 
+    font-weight: 400 !important;
+}
+.demoPanel {
+	position:relative;
+}
+.demo_changer p {
+	margin:10px 0;
+}
+.demo_changer h4 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    color: #bbb;
+    text-transform: none !important;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    padding-bottom: 0;
+}
+
+.demo_changer hr {
+	border-color:#464646;
+    margin-top:15px;
+    margin-bottom: 15px;
+}
+.demo_changer,
+.demo_changer p {
+	color:#545454 !important;
+}
+.demo_changer i {
+    color: #fff;
+    font-size: 21px;
+    padding-right: 2px;
+    line-height: 1.85;
+}
+.demo_changer .demo-icon{
+    cursor: pointer;
+	text-align:center;
+    background:#6dcff6;
+	padding:2px;
+    float: right;
+    height: 40px;
+	line-height:40px;
+    width:41px;
+}
+.demo_changer .form_holder {
+    background-color: #fff;
+    cursor: pointer;
+    font-size: 12px;
+    float: right;
+    border: 1px solid #e2e2e2;
+    padding: 26px 20px;
+    width: 113px;
+}
+.demo_changer .form_holder p{
+    font-size: 12px;
+}
+.demoPanel {
+    margin: 0;
+    padding: 0;
+    width: 125px;
+}
+.predefined_styles{
+    padding:0 7px;
+}
+
+.predefined_styles a{
+    font-family: 'Roboto';
+    color: #fff;
+}
+
+@media only screen and (max-width: 768px) {
+	.demo_changer{
+	    top:125px;
+	}
+} 

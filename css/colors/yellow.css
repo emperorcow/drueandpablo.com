@@ -1,0 +1,201 @@
+/*
+Name:Married | 3 in 1 Wedding Template
+Version:1.0
+Author:Denis Samardjiev
+*/
+
+/* =Table of Contents
+--------------------------------------------------------------
+	=Common Styles
+    =Typography
+    =Margin + Padding
+    =Animate Example
+    =Jumbotron
+    =Carousel
+    =Buttons
+    =Navbar
+    =Modals
+    =Forms
+    =Alerts
+    =Tabs
+    =Panels
+    =Lists
+    =Gallery + Registry
+    =Timeline
+    =Progress Bars
+    =Our count
+    =Footer
+    =Media Queries
+*/
+
+/* =Common Styles
+-------------------------------------------------------------- */
+.jumbotron-holder {
+    background-color: rgba(241, 216, 122, 0.6);
+}
+
+.demo_changer .demo-icon {
+    background-color: #f1d87a;
+}
+
+a.color-link {
+    color: #f1d87a;
+}
+
+a.color-link:focus, a.color-link:hover {
+    color: #dcc671;
+}
+
+a:focus, a:hover {
+    color: #f1d87a;
+}
+
+/* =Typography
+-------------------------------------------------------------- */
+.text-color {
+    color: #f1d87a;
+}
+
+/* =Animate Examples
+-------------------------------------------------------------- */
+.animate-example-box {
+    background-color: #f1d87a;
+}
+
+/* =Jumbotron
+-------------------------------------------------------------- */
+.scroll-down .btn:hover {
+    color: #f1d87a;
+}
+
+/* =Buttons
+-------------------------------------------------------------- */
+.btn-primary {
+    background-color: #f1d87a;
+    border-color: #f1d87a;
+}
+
+.btn-primary:hover {
+    background-color: #dcc671;
+    border-color: #dcc671;
+}
+
+.btn-primary.active.focus, .btn-primary.active:focus, .btn-primary.active:hover, .btn-primary:active.focus, .btn-primary:active:focus, .btn-primary:active:hover, .open>.dropdown-toggle.btn-primary.focus, .open>.dropdown-toggle.btn-primary:focus, .open>.dropdown-toggle.btn-primary:hover {
+    background-color: #dcc671;
+    border-color: #dcc671;
+}
+
+.btn-primary.focus, .btn-primary:focus {
+    background-color: #dcc671;
+    border-color: #dcc671;
+}
+
+.btn-primary.disabled.focus, .btn-primary.disabled:focus, .btn-primary.disabled:hover, .btn-primary[disabled].focus, .btn-primary[disabled]:focus, .btn-primary[disabled]:hover, fieldset[disabled] .btn-primary.focus, fieldset[disabled] .btn-primary:focus, fieldset[disabled] .btn-primary:hover {
+    background-color: #dcc671;
+    border-color: #dcc671;
+}
+
+.btn-primary.active, .btn-primary:active, .open>.dropdown-toggle.btn-primary {
+    background-color: #ce726c;
+    border-color: #ce726c;
+}
+
+/* =Navbar
+-------------------------------------------------------------- */
+.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
+    color: #f1d87a;
+}
+
+.navbar-nav > li.nav-btn a:hover {
+    background-color: #dcc671;
+    border-color: #dcc671;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: #f1d87a;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: #dcc671;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: #f1d87a;
+}
+
+.navbar-toggle {
+    background-color: #f1d87a;
+}
+
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+    color: #f1d87a;
+}
+
+/* =Forms
+-------------------------------------------------------------- */
+label {
+    color: #f1d87a;
+}
+
+/* =Tabs
+-------------------------------------------------------------- */
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover {
+    background-color: #f1d87a;
+    border: 1px solid #f1d87a;
+    border-bottom: 2px solid #dcc671;
+}
+
+.nav-tabs > li > a:hover {
+    border-color: #dcc671;
+}
+
+.nav > li > a:focus, .nav > li > a:hover {
+    background-color: #dcc671;
+}
+
+.tab-pane::first-letter { 
+    color: #dcc671;
+}
+
+/* =Panels
+-------------------------------------------------------------- */
+.panel-default {
+    border-color: #f1d87a;
+}
+
+.panel-default>.panel-heading {
+    background-color: #f1d87a;
+    border-color: #f1d87a;
+}
+
+.panel-default > .panel-heading+.panel-collapse > .panel-body {
+    border-top-color: #e2d089;
+}
+
+/* =Lists
+-------------------------------------------------------------- */
+ul.list-arrow-color li:before {
+    color: #f1d87a;
+}
+
+ul.list-arrow-2-color li:before {
+    color: #f1d87a;
+}
+
+/* =Progress Bars
+-------------------------------------------------------------- */
+.progress-bar {
+    background-color: #f1d87a;
+}
+
+/* =Our Count
+-------------------------------------------------------------- */
+#ourcount .item > .circle-hold {
+    background-color: #f1d87a;
+}
+
+/* =Footer
+-------------------------------------------------------------- */
+.footer-brand {
+    color: #f1d87a;
+}

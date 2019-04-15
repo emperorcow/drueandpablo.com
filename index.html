@@ -1,0 +1,609 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<meta name="author" content="Denis Samardjiev" />
+	<meta name="description" content="Married | 3 in 1 Wedding Template">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>Drue and Pablo</title>
+	
+	<!-- Preloader CSS -->
+	<link href="css/royal_preloader.css" rel="stylesheet">
+
+	<!-- jQuery -->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+	<!-- Parallax -->
+	<script type="text/javascript" src="js/parallax.min.js"></script>
+
+	<!-- Preloader -->
+	<script type="text/javascript" src="js/royal_preloader.min.js"></script>
+	<script type="text/javascript">
+		Royal_Preloader.config({
+		    mode:           'number',
+		    showProgress:   false,
+		    background:     '#ffffff'
+		});
+	</script>
+
+	<!-- Stylesheets -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/ionicons.min.css" rel="stylesheet">
+	<link href="css/magnific-popup.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet" title="main-css">
+    <link href="css/flags.css" rel=stylesheet type="text/css">
+
+	<!-- Style Switcher / remove for production -->
+	<link href="css/style-switcher.css" rel="stylesheet">
+	
+	<!-- Alternate Stylesheets / choose what color and base you want and include the 2 files regularly AFTER style.css above -->
+	<link rel="alternate stylesheet" type="text/css" href="css/colors/pink.css" title="pink">
+	<link rel="alternate stylesheet" type="text/css" href="css/colors/green.css" title="green">
+	<link rel="alternate stylesheet" type="text/css" href="css/colors/orange.css" title="orange">
+	<link rel="alternate stylesheet" type="text/css" href="css/colors/gold.css" title="gold">
+	<link rel="alternate stylesheet" type="text/css" href="css/colors/sleek.css" title="sleek">
+	<link rel="alternate stylesheet" type="text/css" href="css/colors/seagul.css" title="seagul">
+	<link rel="alternate stylesheet" type="text/css" href="css/colors/yellow.css" title="yellow">
+</head>
+<body class="royal_preloader" data-spy="scroll" data-target=".navbar" data-offset="81">
+	<div id="royal_preloader"></div>
+
+	<!-- Begin Header -->
+	<header>
+		<!-- Begin Navigation -->
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container-fluid">
+				<div class="row">
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="navbar-collapse-1">
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="#home" data-id="home" class="scroll-link">Home</a></li>
+							<li><a href="#story" data-id="story" class="scroll-link">Story</a></li>
+							<li><a href="#gallery" data-id="gallery" class="scroll-link">Gallery</a></li>
+							<li><a href="#location" data-id="location" class="scroll-link">Location</a></li>
+							<li><a href="#registry" data-id="registry" class="scroll-link">Registry</a></li>
+							<li class="nav-btn"><btn data-toggle="modal" data-target="#rsvp-modal" class="btn btn-primary btn-lg">RSVP</btn></li>
+						</ul>
+					</div><!-- /.navbar-collapse -->
+				</div><!-- /.row -->
+			</div><!-- /.container -->
+		</nav>
+		<!-- End Navigation -->
+
+		<!-- Begin RSVP Form -->
+		<div class="modal fade" id="rsvp-modal" tabindex="-1" role="dialog">
+		    <div class="modal-dialog">
+		        <div class="modal-content">
+		            <div class="modal-header">
+		                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="ion-ios-close-empty"></span>
+		                </button>
+		                <span class="pe-7s-anchor services-icon-2"></span>
+		                <h4 class="modal-title">RSVP</h4>
+		            </div>
+		            <div class="modal-body">
+		            	<p class="mb20">Please respond and let us know you're coming!</p>
+						<form data-toggle="validator" id="contactForm" name="contactForm">
+							<div class="row">
+								<div class="col-sm-6">
+									<div class="form-group">
+										<label for="name">Name *</label>
+										<div class="controls">
+											<input class="form-control" data-error="This section is required." id="name" placeholder="Your full name" required="" type="text">
+											<div class="help-block with-errors"></div>
+										</div>
+									</div>
+								</div><!-- /.column -->
+								<div class="col-sm-6">
+									<div class="form-group">
+										<label for="email">Email *</label>
+										<div class="controls">
+											<input class="email form-control" data-error="This section is required." id="email" placeholder="Enter your email" required="" type="email">
+											<div class="help-block with-errors"></div>
+										</div>
+									</div>
+								</div><!-- /.column -->
+							</div><!-- /.row -->
+							<div class="row">
+								<div class="col-sm-12">
+									<div class="form-group">
+										<label for="guests">Guests</label>
+										<div class="controls">
+											<input class="form-control" id="guests" placeholder="The names of each guest (aside from above)." type="text">
+											<div class="help-block with-errors"></div>
+										</div>
+									</div>
+								</div><!-- /.column -->
+							</div><!-- /.row -->
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="form-group">
+                                        <label for="song">Songs</label>
+                                        <div class="controls">
+                                            <input class="form-control" id="song" placeholder="A song you'd like to add to the playlist'" type="text">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                </div><!-- /.column -->
+                            </div><!-- /.row -->
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="form-group">
+                                        <label for="country">Country</label>
+                                        <div class="controls">
+						<select id="country" class="form-control" title="Which country are you RSVPing for?" required="">
+							<option>United States of America</option>
+							<option>Spain</option>
+						</select>
+                                        </div>
+                                    </div>
+                                </div><!-- /.column -->
+                            </div><!-- /.row -->
+							<div class="row">
+								<div class="col-sm-12">
+									<div class="form-group mb10">
+										<label for="message">Message</label>
+										<div class="controls">
+											<textarea class="form-control" id="message" placeholder="Any extra information" rows="5"></textarea>
+											<div class="help-block with-errors"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-12 mb20">
+									<div id="msgSubmit" class="h4 hidden no-margin-bottom"></div> 
+								</div><!-- /.column -->
+								<div class="col-sm-12 text-right">
+									<button type="submit" id="submit" class="btn btn-primary btn-block btn-lg">Send</button>
+								</div><!-- /.column -->
+							</div><!-- /.row -->
+						</form><!-- /.form -->
+		            </div>
+		        </div><!-- /.modal-content -->
+		    </div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->
+		<!-- End RSVP Form -->
+
+	</header>
+	<!-- End Header -->
+
+	<!-- Begin Jumbotron -->
+	<div class="jumbotron-holder">
+		<div class="jumbotron jumbotron-main parallax-window" id="home" data-parallax="scroll" data-image-src="images/header.jpg">
+			<div class="container height-100">
+				<div class="center-vertically-holder">
+					<div class="center-vertically">
+						<div class="col-sm-10 col-sm-offset-1 text-center bottomReveal">
+							<h2 class="text-white jumbotron-bold">
+								Drue and Pablo are getting:
+							</h2>
+							<span class="section-divider section-divider-center section-divider-transparent"></span>
+							<div class="ticker">
+								<h1>Hitched</h1>
+				                                <h1>Married</h1>
+				                                <h1>Casados</h1>
+							</div>
+							<span class="section-divider section-divider-center section-divider-transparent"></span>
+							<p class="jumbotron-bold"><img src="css/blank.gif" class="flag flag-es" /> · August 17 · Ayuntamiento de La Coruña</p>
+                            <p class="jumbotron-bold"><img src="css/blank.gif" class="flag flag-us" /> · August 25 · The Wisp Resort, Maryland</p>
+							<button class="btn btn-lg btn-primary" data-toggle="modal" data-target="#rsvp-modal">RSVP</button>
+						</div><!-- /.column -->
+
+						<div class="scroll-down">
+				            <a href="#story" data-id="story" class="btn scroll-link"><span class="ion-ios-arrow-down scroll-indicator"></span></a>
+				        </div>
+					</div><!-- /.vertical center -->
+				</div><!-- /.vertical center holder -->
+			</div><!-- /.container -->
+		</div>
+	</div>
+	<!-- End Jumbotron -->
+
+	<!-- Start Timeline -->
+	<section id="story"  class="section-padding">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<ul class="timeline timeline-pad">
+                        <li class="timeline-inverted">
+                            <div class="timeline-image scaleReveal"><img alt="" class="img-circle img-timeline img-responsive" src="images/gallery/1.jpg"></div>
+                            <div class="timeline-panel leftReveal">
+                                <div class="timeline-heading">
+                                    <h3 class="section-sub-title text-color mb15">2011 June</h3>
+                                    <h4>Drue moves to Spain.</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p>Our future "spanish seniorita" decided that she no longer wanted to teach those annoying American kids and bolted to Spain!</p>
+                                </div>
+                            </div>
+                        </li>
+
+						<li>
+							<div class="timeline-image scaleReveal"><img alt="" class="img-circle img-timeline img-responsive" src="images/gallery/8.jpg"></div>
+							<div class="timeline-panel rightReveal">
+								<div class="timeline-heading">
+									<h3 class="section-sub-title text-color mb15">2011 October</h3>
+									<h4>We started dating.</h4>
+								</div>
+								<div class="timeline-body">
+									<p>Although many cute spanish boys tried, one persisted and finally took Drue off the market after only a few months!</p>
+								</div>
+							</div>
+						</li>
+
+                        <li class="timeline-inverted">
+                            <div class="timeline-image scaleReveal"><img alt="" class="img-circle img-timeline img-responsive" src="images/gallery/4.jpg"></div>
+                            <div class="timeline-panel leftReveal">
+                                <div class="timeline-heading">
+                                    <h3 class="section-sub-title text-color mb15">2013 June</h3>
+                                    <h4>Pareja de Hecho!</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p>You'll just have to learn your Spanish!</p>
+                                </div>
+                            </div>
+                        </li>
+
+						<li>
+							<div class="timeline-image scaleReveal"><img alt="" class="img-circle img-timeline img-responsive" src="images/gallery/3.jpg"></div>
+							<div class="timeline-panel rightReveal">
+								<div class="timeline-heading">
+									<h3 class="section-sub-title text-color mb15">2013 August</h3>
+									<h4>We moved in!</h4>
+								</div>
+								<div class="timeline-body"> 
+                                    <p>Although the view was amazing, Drue couldn't afford to live in her cardboard box on the beach anymore, so she conned Pablo into moving in together.</p>
+								</div>
+							</div>
+						</li>
+
+                        <li class="timeline-inverted">
+                            <div class="timeline-image scaleReveal"><img alt="" class="img-circle img-timeline img-responsive" src="images/gallery/5.jpg"></div>
+                            <div class="timeline-panel leftReveal">
+                                <div class="timeline-heading">
+                                    <h3 class="section-sub-title text-color mb15">2014 January</h3>
+                                    <h4>Rabbit Fever</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p>No kids yet (madre muy triste), but we got a cute bunny! Pablo was so happy he had another cutie at home.</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="timeline-image scaleReveal"><img alt="" class="img-circle img-timeline img-responsive" src="images/gallery/6.jpg"></div>
+                            <div class="timeline-panel rightReveal">
+                                <div class="timeline-heading">
+                                    <h3 class="section-sub-title text-color mb15">2017</h3>
+                                    <h4>We got engaged!</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p>We decided it was time to have a party to celebrate all this time together, so Pablo proposed and the rest is history!</p>
+                                </div>
+                            </div>
+                        </li>
+
+					</ul>
+				</div><!-- /.column -->
+			</div><!-- /.row -->
+
+		</div><!-- /.container -->
+	</section>
+	<!-- End Timeline -->
+
+	<!-- Begin Parallax Image -->
+	<div class="jumbotron-holder" style="height:500px">
+		<div class="jumbotron jumbotron-page parallax-window" data-parallax="scroll" data-image-src="images/mid-page.jpg">
+			<div class="container center-vertically-holder">
+				<div class="center-vertically">
+					<div class="col-md-10 col-md-offset-1 text-center scaleReveal">
+						<h3 class="section-sub-title mb10 text-white">Save The Dates</h3>
+						<h2 class="no-margin text-white">
+                            <img src="css/blank.gif" class="flag flag-es" /> · August 17
+						</h2>
+                        <h2 class="no-margin text-white">
+                            <img src="css/blank.gif" class="flag flag-us" /> · August 25
+                        </h2>
+					</div><!-- /.column -->
+				</div><!-- /.vertical center -->
+			</div><!-- /.container -->
+		</div><!-- /.jumbotron -->
+	</div><!-- /.jumbotron holder -->
+	<!-- End Parallax Image -->
+
+	<!-- Start Gallery -->
+	<section id="gallery" class="section-padding section-border-bottom">
+		<div class="container">
+			<div class="row">
+				<!-- Title -->
+				<div class="col-sm-8 col-sm-offset-2 text-center">
+					<h3 class="section-title mb20">Gallery</h3>
+				</div><!-- /.column -->
+			</div><!-- /.row -->
+
+			<div class="row">
+				<!-- Item 1 -->
+				<div class="col-sm-4 mb30">
+					<a href="images/gallery/1.jpg" title="Image 1" class="zoom">
+						<img src="images/gallery/1.jpg" class="img-responsive img-gallery img-circle" alt="...">
+					</a>
+				</div><!-- /.column -->
+
+				<!-- Item 2 -->
+				<div class="col-sm-4 mb30">
+					<a href="images/gallery/2.jpg" title="Image 2" class="zoom">
+						<img src="images/gallery/2.jpg" class="img-responsive img-gallery img-circle" alt="...">
+					</a>
+				</div><!-- /.column -->
+
+				<!-- Item 3 -->
+				<div class="col-sm-4 mb30">
+					<a href="images/gallery/3.jpg" title="Image 3" class="zoom">
+						<img src="images/gallery/3.jpg" class="img-responsive img-gallery img-circle" alt="...">
+					</a>
+				</div><!-- /.column -->
+
+				<!-- Item 4 -->
+				<div class="col-sm-4 mb30">
+					<a href="images/gallery/4.jpg" title="Image 4" class="zoom">
+						<img src="images/gallery/4.jpg" class="img-responsive img-gallery img-circle" alt="...">
+					</a>
+				</div><!-- /.column -->
+
+				<!-- Item 5 -->
+				<div class="col-sm-4 mb30">
+					<a href="images/gallery/5.jpg" title="Image 5" class="zoom">
+						<img src="images/gallery/5.jpg" class="img-responsive img-gallery img-circle" alt="...">
+					</a>
+				</div><!-- /.column -->
+
+				<!-- Item 6 -->
+				<div class="col-sm-4 mb30">
+					<a href="images/gallery/6.jpg" title="Image 6" class="zoom">
+						<img src="images/gallery/6.jpg" class="img-responsive img-gallery img-circle" alt="...">
+					</a>
+				</div><!-- /.column -->
+
+				<!-- Item 7 -->
+				<div class="col-sm-4 mb30-xs">
+					<a href="images/gallery/7.jpg" title="Image 7" class="zoom">
+						<img src="images/gallery/7.jpg" class="img-responsive img-gallery img-circle" alt="...">
+					</a>
+				</div><!-- /.column -->
+
+				<!-- Item 8 -->
+				<div class="col-sm-4 mb30-xs">
+					<a href="images/gallery/8.jpg" title="Image 8" class="zoom">
+						<img src="images/gallery/8.jpg" class="img-responsive img-gallery img-circle" alt="...">
+					</a>
+				</div><!-- /.column -->
+
+				<!-- Item 9 -->
+				<div class="col-sm-4">
+					<a href="images/gallery/9.jpg" title="Image 9" class="zoom">
+						<img src="images/gallery/9.jpg" class="img-responsive img-gallery img-circle" alt="...">
+					</a>
+				</div><!-- /.column -->
+
+				<!-- Item 10 -->
+				<div class="col-sm-4">
+					<a href="images/gallery/9.jpg" title="Image 10" class="zoom">
+						<img src="images/gallery/10.jpg" class="img-responsive img-gallery img-circle" alt="...">
+					</a>
+				</div><!-- /.column -->
+
+                <!-- Item 11 -->
+                <div class="col-sm-4">
+                    <a href="images/gallery/9.jpg" title="Image 11" class="zoom">
+                        <img src="images/gallery/11.jpg" class="img-responsive img-gallery img-circle" alt="...">
+                    </a>
+                </div><!-- /.column -->
+
+                <!-- Item 12 -->
+                <div class="col-sm-4">
+                    <a href="images/gallery/9.jpg" title="Image 12" class="zoom">
+                        <img src="images/gallery/12.jpg" class="img-responsive img-gallery img-circle" alt="...">
+                    </a>
+                </div><!-- /.column -->
+			</div><!-- /.row -->
+
+		</div><!-- /.container -->
+	</section>
+	<!-- End Gallery -->
+
+	<!-- Start Location -->
+	<section id="location" class="section-padding section-border-bottom">
+		<div class="container">
+			<div class="row">
+				<!-- Title -->
+				<div class="col-sm-8 col-sm-offset-2 text-center">
+					<h3 class="section-title mb30">Location</h3>
+					<p class="mb50">We will be getting married officially on August 17th at the beautiful town hall in our city. There will be a reception to follow in Spain as well as another in the United States.</p>
+				</div><!-- /.column -->
+			</div><!-- /.row -->
+
+			<div class="row">
+				<!-- Item 1 -->
+				<div class="col-sm-4 text-center leftReveal">
+					<h3 class="section-sub-title text-color">Ceremony</h3>
+					<img src="images/venue-1.png" class="img-responsive img-venue rotateLeftReveal" alt="...">
+					<h2 class="section-venue-title">La Coruña Town Hall</h2>
+					<p class="no-margin-bottom">August 17th, 6-7pm · La Coruña, Spain</p>
+					<small>
+						<em>
+							<a class="popup-gmaps underline-link" href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2900.272755915235!2d-8.397999484511367!3d43.37132057913207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2e7b809561f857%3A0xe5ede83999e1957e!2sConcello+da+Coru%C3%B1a!5e0!3m2!1sen!2sjm!4v1527862705678">Open Map</a>
+						</em>
+					</small>
+				</div><!-- /.column -->
+
+				<!-- Item 2 -->
+				<div class="col-sm-4 text-center bottomReveal">
+					<h3 class="section-sub-title text-color mt40-xs">Spanish Reception</h3>
+					<img src="images/venue-2.png" class="img-responsive img-venue rotateLeftReveal" alt="...">
+					<h2 class="section-venue-title">Mirador de San Pedro</h2>
+					<p class="no-margin-bottom">August 17th,  8pm · La Coruña, Spain</p>
+					<small>
+						<em>
+							<a class="popup-gmaps underline-link" href="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11600.151671058149!2d-8.434796!3d43.3762312!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2e7b89d86d2e2b%3A0x358a30c0b8f1f947!2sEl+Mirador+de+San+Pedro!5e0!3m2!1sen!2sjm!4v1527862775489">Open Map</a>
+						</em>
+					</small>
+				</div><!-- /.column -->
+
+				<!-- Item 3 -->
+				<div class="col-sm-4 text-center rightReveal">
+					<h3 class="section-sub-title text-color mt40-xs">American Reception</h3>
+					<img src="images/venue-3.png" class="img-responsive img-venue rotateLeftReveal" alt="...">
+					<h2 class="section-venue-title">The Wisp Resort</h2>
+					<p class="no-margin-bottom">August 25th,  5pm · McHenry, MD, USA</p>
+					<small>
+						<em>
+							<a class="popup-gmaps underline-link" href="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12304.486031535193!2d-79.3634466!3d39.5568677!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa775c776748b81b6!2sWisp+Resort!5e0!3m2!1sen!2sjm!4v1527862814179">Open Map</a>
+						</em>
+					</small>
+				</div><!-- /.column -->
+			</div>
+
+			<div class="row">
+				<!-- Title -->
+				<div class="col-sm-8 col-sm-offset-2 text-center mt50">
+					<p class="no-margin"><span class="text-heavy text-color">*</span> In Spanish ceremonies there is not a bridal party; however, the “Novios” are accompanied by one witness each. Drue will be accompanied by her Dad and Pablo will be accompanied by his Mom.</p>
+				</div><!-- /.column -->
+			</div><!-- /.row -->
+		</div><!-- /.container -->
+	</section>
+	<!-- End Location -->
+
+	<!-- Start Accommodations -->
+	<section id="accommodations" class="section-padding section-border-bottom">
+		<div class="container">
+			<div class="row">
+				<!-- Title -->
+				<div class="col-sm-8 col-sm-offset-2 text-center">
+					<h2 class="section-title mb30">Accommodations</h2>
+				</div><!-- /.column -->
+			</div><!-- /.row -->
+
+            <div class="row">
+                <div class="col-lg-12 text-center topReveal">
+                    <h3 class="section-sub-title text-color">American Accomodations</h3>
+                </div>
+            </div>
+
+			<div class="row">
+				<div class="col-sm-6 col-md-4 col-md-offset-2 text-center leftReveal">
+					<h2 class="section-venue-title">The Wisp Resort</h2>
+					<p class="no-margin-bottom text-primary">+1.309.245.7809</p>
+                    <p class="no-margin-bottom text-warning small">Use Discounted Group Rate #3640</p>
+					<small>
+						<em>
+                            <a class="popup-gmaps underline-link" href="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12304.486031535193!2d-79.3634466!3d39.5568677!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa775c776748b81b6!2sWisp+Resort!5e0!3m2!1sen!2sjm!4v1527862814179">Map</a>
+                            &middot;
+                            <a class="underline-link" href="http://www.wispresort.com">Website</a>
+						</em>
+					</small>
+				</div><!-- /.column -->
+
+                <div class="col-sm-6 col-md-4 text-center rightReveal">
+                    <h2 class="section-venue-title">Lakepointe Inn</h2>
+                    <p class="no-margin-bottom text-primary">+1.301.387.0111</p>
+                    <small>
+                        <em>
+                            <a class="popup-gmaps underline-link" href="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12304.518865925065!2d-79.3577345!3d39.5566826!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6d0c0ef94c371190!2sLake+Pointe+Inn+Bed+And+Breakfast!5e0!3m2!1sen!2sjm!4v1527865837901">Map</a>
+                            &middot;
+                            <a class="underline-link" href="https://www.deepcreekvacations.com/communities/Lake-Pointe">Website</a>
+                        </em>
+                    </small>
+                </div><!-- /.column -->
+            </div>
+
+            <div class="row">
+                <div class="col-sm-6 col-md-4 col-md-offset-2 text-center leftReveal">
+                    <h2 class="section-venue-title">Carmel Cove Inn</h2>
+                    <p class="no-margin-bottom text-primary">+1.301.387.0067</p>
+                    <small>
+                        <em>
+                            <a class="popup-gmaps underline-link" href="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12312.578400582952!2d-79.291055!3d39.511226!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa80609f287351667!2sCarmel+Cove+Inn+at+Deep+Creek+Lake!5e0!3m2!1sen!2sjm!4v1527865975395">Map</a>
+                            &middot;
+                            <a class="underline-link" href="http://www.carmelcoveinn.com">Website</a>
+                        </em>
+                    </small>
+                </div><!-- /.column -->
+
+                <div class="col-sm-6 col-md-4 text-center rightReveal">
+                    <h2 class="section-venue-title">Taylor Made Vacation Rentals</h2>
+                    <p class="no-margin-bottom text-primary">+1.301.387.5999</p>
+                    <small>
+                        <em>
+                            <a class="popup-gmaps underline-link" href="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12303.798750431548!2d-79.356222!3d39.560742!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5962db2f8d0dde5e!2sTaylor-Made+Deep+Creek+Vacations+%26+Sales!5e0!3m2!1sen!2sjm!4v1527866189749">Map</a>
+                            &middot;
+                            <a class="underline-link" href="https://www.deepcreekvacations.com/?gclid=CjwKCAjwiPbWBRBtEiwAJakcpHn5UGMXHeMWumLqbv2GM39EJo6M-jTvu9F-jmUELJOadsg0mB4gXhoCYWcQAvD_BwE">Website</a>
+                        </em>
+                    </small>
+                </div><!-- /.column -->
+
+            </div><!-- /.row -->
+		</div><!-- /.container -->
+	</section>
+	<!-- End Accommodations -->
+
+	<!-- Start Registry -->
+	<section id="registry" class="section-padding section-border-bottom">
+		<div class="container">
+			<div class="row">
+				<!-- Title -->
+				<div class="col-sm-8 col-sm-offset-2 text-center">
+					<h2 class="section-title mb30">Registry</h2>
+					<p class="lead-l">Thank you so much for thinking about us. Since we have to deal with packing and traveling internationally, it is impossible for us to have a traditional wedding registry.  Although we know it is not very traditional, the easiest and most useful gift for us would be a donation to our honeymoon and house funds.</p>
+				</div><!-- /.column -->
+			</div><!-- /.row -->
+
+			<div class="row">
+				<!-- Content -->
+				<div class="col-sm-8 col-sm-offset-2 text-center">
+                    <h2 class="section-venue-title bottomReveal">Paypal</h2>
+                    <p class="no-margin bottomReveal">You can send a little something <a class="color-link underline-link" href="http://paypal.me/bdruemorris" target="_blank">here</a>.</p>
+                    <h2 class="section-venue-title bottomReveal">Check</h2>
+                    <p class="no-margin bottomReveal">Can be made out to: Bethanney Drue Morris.</p>
+                </div><!-- /.column -->
+			</div><!-- /.row -->
+		</div><!-- /.container -->
+	</section>
+	<!-- End Registry -->
+
+	<!-- Start Footer -->
+	<footer>
+		<div class="container">
+			<div class="row">
+				<!-- Logo -->
+				<div class="col-xs-10">
+					<div class="footer-brand">Drue and Pablo</div>
+				</div>
+
+				<!-- Arrow -->
+				<div class="col-xs-2 text-right">
+					<a href="#" class="scroll-top"><i class="footer-arrow ion-ios-arrow-up"></i></a>
+				</div>
+			</div><!-- /.row -->
+		</div><!-- /.container -->
+	</footer>
+	<!-- End Footer -->
+	
+	<!-- Javascript Files -->
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+	<script type="text/javascript" src="js/jquery.inview.min.js"></script>
+	<script type="text/javascript" src="js/jquery.countTo.js"></script>  
+	<script type="text/javascript">
+		/* ---- Counter (our count) ---- */
+		$('#ourcount').one('inview', function(event, isInView) {
+			if (isInView) {
+				$('.timer').countTo({speed: 3000});
+			}
+		});
+	</script>
+	<script type="text/javascript" src="js/form-validator.min.js"></script> 
+	<script type="text/javascript" src="js/style-switcher.js"></script>
+	<script type="text/javascript" src="js/scrollreveal.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
